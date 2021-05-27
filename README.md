@@ -18,13 +18,13 @@ model.fit(x, y, batch_size=64, epochs=5, callbacks=[slack_notification])
 
 ## Arguments
 - `url` : string - Slack Incoming Webhook URL
-- `token` : string(Optional) - Slack bot token
+- `token` : string(Optional) - Slack bot token  
   This will be needed when uploading the graph.
-- `channel` : string(Optional) - Slack channel ID
+- `channel` : string(Optional) - Slack channel ID  
   The ID of the channel to which you want to upload the graph. Specify the same channel as the webhook.
-- `loss_metrics` : list(Optional) - Loss metrics you want to monitor.
+- `loss_metrics` : list(Optional) - Loss metrics you want to monitor.  
   ex. `['loss', 'val_loss']`
-- `acc_metrics` : list(Optional) - Acc metrics you want to monitor.
+- `acc_metrics` : list(Optional) - Acc metrics you want to monitor.  
   ex. `['acc', 'val_acc']`
 - `attachment_image` : bool(Optional) - Whether to upload the graph.
 - `period` : int(Optional) - Notification interval (epochs).

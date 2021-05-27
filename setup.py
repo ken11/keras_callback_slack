@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="keras_callback_slack",
-    version="0.0.4",
+    version="0.0.5",
     author="ken",
     author_email="kent.adachi@adachi-honten.net",
     description="keras custom callback for slack",
